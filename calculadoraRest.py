@@ -43,7 +43,7 @@ class rest_calc(webapp.webApp):
                 htmlBody = "<html><body><h1> " + 'Previous solution: '+ self.result + " </h1></html></body>"
 
         else:
-            httpCode = "200 OK"
+            httpCode = "405 Method not allowed"
             htmlBody = "<html><body><h1> " 'Only PUT or GET allowed.' " </h1></html></body>"
 
         return (httpCode, htmlBody)
